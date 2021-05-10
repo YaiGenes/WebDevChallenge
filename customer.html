@@ -45,6 +45,10 @@
                     </div>
 
                     <div class="nav-link-wrapper">
+                        <a href="servicedetails.html">Services details</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
                         <a href="gallery.html">Gallery</a>
                     </div>
 
@@ -60,13 +64,13 @@
                     </div>
                 </div>
             </div>
+
             <!---Breadcrums---->
             <div class="breadcrumbs">
                 <ul class="breddcrums">
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">Home</a>
                     </li>
-
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">About us</a>
                     </li>
@@ -74,7 +78,10 @@
                         <a href="" class="breadcrumbs__link">Services</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Gallery</a>
+                        <a href="" class="breadcrumbs__link">Services</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link">Services details</a>
                     </li>
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link--active">Customer attention</a>
@@ -84,8 +91,55 @@
                     </li>
                 </ul>
             </div>
+
+            <!---Customer service form---->
+            <div class="form-wrapper">
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="service">Service</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="service" name="service">
+                                <option value="service1">Service1</option>
+                                <option value="service2">Service2</option>
+                                <option value="service3">Service3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
+
     <footer id="footer">
 
     </footer>
