@@ -5,6 +5,24 @@
     <meta charset="utf-8">
     <title>proTECHtingUrGenes</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function validateform() {
+            var Name = document.contactform.Name.value;
+            var Lastname = document.contactform.Lastname.value;
+            var Subject = document.contactform.Subject.value;
+
+            if (Name == null || Name == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if (Lastname == null || Lastname == "") {
+                alert("Lastname can't be blank");
+                return false;
+            } else if (Subject.length < 20) {
+                alert("You must write ate least 20 characters");
+                return false;
+            }
+        }
+    </script>
 
 </head>
 
@@ -13,7 +31,6 @@
     <div class="container" id="container">
         <div id="main">
             <!-- HEADING -->
-            <h1>contact</h1>
             <div class="logo-wrapper">
                 <!-- Sector which contain logo+company name     -->
                 <div class="upp-upp-side">
@@ -45,6 +62,10 @@
                     </div>
 
                     <div class="nav-link-wrapper">
+                        <a href="servicedetails.html">Services details</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
                         <a href="gallery.html">Gallery</a>
                     </div>
 
@@ -60,21 +81,24 @@
                     </div>
                 </div>
             </div>
+
             <!---Breadcrums---->
             <div class="breadcrumbs">
                 <ul class="breddcrums">
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">Home</a>
                     </li>
-
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">About us</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link">Gallery</a>
                     </li>
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">Services</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Gallery</a>
+                        <a href="" class="breadcrumbs__link">Services details</a>
                     </li>
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">Customer attention</a>
@@ -84,9 +108,59 @@
                     </li>
                 </ul>
             </div>
+
+            <!---Customer service form---->
+            <div class="contactform">
+                <form action="abc.php" method="POST" onsubmit="return validat" name="contactform">
+                    <div class=" row ">
+                        <div class="col-25 ">
+                            <label for="fname ">First Name</label>
+                        </div>
+                        <div class="col-75 ">
+                            <input type="text " id="fname " name="firstname " placeholder="Your name.. ">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-25 ">
+                            <label for="lname ">Last Name</label>
+                        </div>
+                        <div class="col-75 ">
+                            <input type="text " id="lname " name="lastname " placeholder="Your last name.. ">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-25 ">
+                            <label for="Subject ">Subject</label>
+                        </div>
+                        <div class="col-75 ">
+                            <select id="Subject " name="Subject ">
+                                <option value="Subject1 ">Subject1</option>
+                                <option value="Subject2 ">Subject2</option>
+                                <option value="Subject3 ">Subject3</option>
+                                <option value="Subject4 ">Subject4</option>
+                                <option value="Subject5 ">Subject5</option>
+                                <option value="Subject6 ">Subject6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-25 ">
+                            <label for="Comment ">Comment</label>
+                        </div>
+                        <div class="col-75 ">
+                            <textarea id="Comment " name="Comment " placeholder="Write something.. " style="height:200px "></textarea>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <input type="submit " value="Send ">
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
-    <footer id="footer">
+
+    <footer id="footer ">
 
     </footer>
 </body>
