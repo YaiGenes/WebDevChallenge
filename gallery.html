@@ -5,6 +5,24 @@
     <meta charset="utf-8">
     <title>proTECHtingUrGenes</title>
     <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .pic {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .picbig {
+            position: absolute;
+            width: 0%;
+            -webkit-transition: width 0.3 linear 0s;
+            transition: width 0.3s linear 0s;
+            z-index: 10;
+        }
+        
+        .pic:hover+.picbig {
+            width: 200px;
+        }
+    </style>
 
 </head>
 
@@ -13,7 +31,6 @@
     <div class="container" id="container">
         <div id="main">
             <!-- HEADING -->
-            <h1>gallery</h1>
             <div class="logo-wrapper">
                 <!-- Sector which contain logo+company name     -->
                 <div class="upp-upp-side">
@@ -45,6 +62,10 @@
                     </div>
 
                     <div class="nav-link-wrapper">
+                        <a href="servicedetails.html">Services details</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
                         <a href="gallery.html">Gallery</a>
                     </div>
 
@@ -60,21 +81,24 @@
                     </div>
                 </div>
             </div>
+
             <!---Breadcrums---->
             <div class="breadcrumbs">
                 <ul class="breddcrums">
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">Home</a>
                     </li>
-
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">About us</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link--active">Gallery</a>
                     </li>
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">Services</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link--active">Gallery</a>
+                        <a href="" class="breadcrumbs__link">Services details</a>
                     </li>
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link">Customer attention</a>
@@ -84,9 +108,35 @@
                     </li>
                 </ul>
             </div>
+
+            <!---Gallery---->
+
+            <img class="pic" src="images/Gallery1 (2).jpg" width=400px height=300px>
+            <img class="picbig" src="images/Gallery1 (2).jpg" width=400px height=300px>
+
+            <img class="pic" src="images/Gallery2 (2).jpg" width=400px height=300px>
+            <img class="picbig" src="images/Gallery2 (2).jpg " width=400px height="300px">
+
+            <img class="pic" src="images/Gallery1.jpg" width=400px height=300px>
+            <img class="picbig" src="images/Gallery1.jpg " width=400px height="300px">
+
+            <img class="pic" src="images/Gallery2.jpg" width=400px height=300px>
+            <img class="picbig" src="images/Gallery2.jpg " width=400px height="300px">
+
+            <img class="pic" src="images/Gallery4.jpg" width=400px height=300px>
+            <img class="picbig" src="images/Gallery4.jpg " width=400px height="300px">
+
+            <img class="pic" src="images/Gallery5.jpg" width=400px height=300px>
+            <img class="picbig" src="images/Gallery5.jpg " width=400px height="300px">
+
+            <img class="pic" src="images/Gallery6.jpg" width=400px height=300px>
+            <img class="picbig" src="images/Gallery6.jpg " width=400px height="300px">
+
+
+
         </div>
     </div>
-    <footer id="footer">
+    <footer id="footer ">
 
     </footer>
 
