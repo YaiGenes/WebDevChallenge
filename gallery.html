@@ -5,43 +5,31 @@
     <meta charset="utf-8">
     <title>proTECHtingUrGenes</title>
     <link rel="stylesheet" href="style.css">
-    <style type="text/css">
-        .pic {
-            width: 50px;
-            height: 50px;
-        }
-        
-        .picbig {
-            position: absolute;
-            width: 0%;
-            -webkit-transition: width 0.3 linear 0s;
-            transition: width 0.3s linear 0s;
-            z-index: 10;
-        }
-        
-        .pic:hover+.picbig {
-            width: 200px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 
 </head>
 
 <body>
     <!--COMMON TEMPLATE-->
+
     <div class="container" id="container">
         <div id="main">
-            <!-- HEADING -->
-            <div class="logo-wrapper">
-                <!-- Sector which contain logo+company name     -->
-                <div class="upp-upp-side">
-                    <!-- Upper-left part -->
-                    <header>
-                        <div class="brand">
-                            <!-- Company name -->
-                            <h1>proTECHtingUrGenes</h1>
-                        </div>
-                        <!-- #add the image of the logo with change color and subtittle -->
 
+            <!-- HEADING -->
+            <div class="banner">
+                <div class=banner-wrapper>
+                    <!-- Wrapper which contain logo+company name     -->
+                    <header>
+                        <div class="header-iner">
+                            <a href="index.html" id="logo">
+                                <img src="images/logo.jpg" alt="Company_logo" width="5%">
+                            </a>
+
+                            <div class="brand">
+                                <!-- Company name -->
+                                <h1>proTECHtingUrGenes</h1>
+                            </div>
+                        </div>
                     </header>
                 </div>
             </div>
@@ -70,15 +58,9 @@
                     </div>
 
                     <div class="nav-link-wrapper">
-                        <a href="customer.html">Customer attention</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
                         <a href="contact.html">Contact us</a>
                     </div>
-                    <div class="upp-down-right-side">
-                        <!-- add an image -->
-                    </div>
+
                 </div>
             </div>
 
@@ -86,57 +68,52 @@
             <div class="breadcrumbs">
                 <ul class="breddcrums">
                     <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Home</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">About us</a>
-                    </li>
-                    <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link--active">Gallery</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Services</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Services details</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Customer attention</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Contact us</a>
                     </li>
                 </ul>
             </div>
 
             <!---Gallery---->
 
-            <img class="pic" src="images/Gallery1 (2).jpg" width=400px height=300px>
-            <img class="picbig" src="images/Gallery1 (2).jpg" width=400px height=300px>
+            <div class="gallery" width="60%">
+                <img class="pic" src="images/Gallery1 (2).jpg" width="10%" height="10%">
+                <img class="picbig" src="images/Gallery1 (2).jpg" width="10%" height="10%">
 
-            <img class="pic" src="images/Gallery2 (2).jpg" width=400px height=300px>
-            <img class="picbig" src="images/Gallery2 (2).jpg " width=400px height="300px">
+                <img class="pic" src="images/Gallery2 (2).jpg" width="10%" height="10%">
+                <img class="picbig" src="images/Gallery2 (2).jpg " width="10%" height="10%">
 
-            <img class="pic" src="images/Gallery1.jpg" width=400px height=300px>
-            <img class="picbig" src="images/Gallery1.jpg " width=400px height="300px">
+                <img class="pic" src="images/Gallery1.jpg" width="10%" height="10%">
+                <img class="picbig" src="images/Gallery1.jpg " width=10% height="10%">
 
-            <img class="pic" src="images/Gallery2.jpg" width=400px height=300px>
-            <img class="picbig" src="images/Gallery2.jpg " width=400px height="300px">
+                <img class="pic" src="images/Gallery5.jpg" width="10%" height="10%">
+                <img class="picbig" src="images/Gallery5.jpg " width="10%" height="10%">
 
-            <img class="pic" src="images/Gallery4.jpg" width=400px height=300px>
-            <img class="picbig" src="images/Gallery4.jpg " width=400px height="300px">
-
-            <img class="pic" src="images/Gallery5.jpg" width=400px height=300px>
-            <img class="picbig" src="images/Gallery5.jpg " width=400px height="300px">
-
-            <img class="pic" src="images/Gallery6.jpg" width=400px height=300px>
-            <img class="picbig" src="images/Gallery6.jpg " width=400px height="300px">
-
+                <img class="pic" src="images/Gallery6.jpg" width="10%" height="10%">
+                <img class="picbig" src="images/Gallery6.jpg " width="10%" height="10%">
+            </div>
         </div>
     </div>
 
-    <footer id="footer ">
-
+    <footer id="footer">
+        <div class="footer-info">
+            <h3>pro_TECH_ting_Ur_Genes</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptatum at debitis ut eos!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a>></a>
+                </li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>></a>
+                </li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a>></a>
+                </li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright&copy; 2021 pro_TECH_ting_Ur_Genes designed by YaiGenes</p>
+        </div>
     </footer>
 
 </body>

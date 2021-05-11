@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <title>proTECHtingUrGenes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+    <!--JS to validate contact form-->
     <script>
         function validateform() {
             var Name = document.contactform.Name.value;
@@ -28,20 +31,25 @@
 
 <body>
     <!--COMMON TEMPLATE-->
+
     <div class="container" id="container">
         <div id="main">
-            <!-- HEADING -->
-            <div class="logo-wrapper">
-                <!-- Sector which contain logo+company name     -->
-                <div class="upp-upp-side">
-                    <!-- Upper-left part -->
-                    <header>
-                        <div class="brand">
-                            <!-- Company name -->
-                            <h1>proTECHtingUrGenes</h1>
-                        </div>
-                        <!-- #add the image of the logo with change color and subtittle -->
 
+            <!-- HEADING -->
+            <div class="banner">
+                <div class=banner-wrapper>
+                    <!-- Wrapper which contain logo+company name     -->
+                    <header>
+                        <div class="header-iner">
+                            <a href="index.html" id="logo">
+                                <img src="images/logo.jpg" alt="Company_logo" width="5%">
+                            </a>
+
+                            <div class="brand">
+                                <!-- Company name -->
+                                <h1>proTECHtingUrGenes</h1>
+                            </div>
+                        </div>
                     </header>
                 </div>
             </div>
@@ -49,12 +57,17 @@
             <!-- NAVIGATION BAR -->
             <div class="nav-wrapper">
                 <div class="upp-down-left-side">
+
                     <div class="nav-link-wrapper">
                         <a href="index.html">Home</a>
                     </div>
 
                     <div class="nav-link-wrapper">
                         <a href="about.html">About us</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="gallery.html">Gallery</a>
                     </div>
 
                     <div class="nav-link-wrapper">
@@ -66,102 +79,98 @@
                     </div>
 
                     <div class="nav-link-wrapper">
-                        <a href="gallery.html">Gallery</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
-                        <a href="customer.html">Customer attention</a>
-                    </div>
-
-                    <div class="nav-link-wrapper">
                         <a href="contact.html">Contact us</a>
-                    </div>
-                    <div class="upp-down-right-side">
-                        <!-- add an image -->
                     </div>
                 </div>
             </div>
 
+
             <!---Breadcrums---->
             <div class="breadcrumbs">
                 <ul class="breddcrums">
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Home</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">About us</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Gallery</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Services</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Services details</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="" class="breadcrumbs__link">Customer attention</a>
-                    </li>
                     <li class="breadcrumbs__item">
                         <a href="" class="breadcrumbs__link--active">Contact us</a>
                     </li>
                 </ul>
             </div>
 
+
             <!---Customer service form---->
             <div class="contactform">
                 <form action="abc.php" method="POST" onsubmit="return validat" name="contactform">
-                    <div class=" row ">
-                        <div class="col-25 ">
-                            <label for="fname ">First Name</label>
+                    <div class=" row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
                         </div>
-                        <div class="col-75 ">
-                            <input type="text " id="fname " name="firstname " placeholder="Your name.. ">
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-25 ">
-                            <label for="lname ">Last Name</label>
-                        </div>
-                        <div class="col-75 ">
-                            <input type="text " id="lname " name="lastname " placeholder="Your last name.. ">
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
                         </div>
                     </div>
-                    <div class="row ">
-                        <div class="col-25 ">
-                            <label for="Subject ">Subject</label>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
                         </div>
-                        <div class="col-75 ">
-                            <select id="Subject " name="Subject ">
-                                <option value="Subject1 ">Subject1</option>
-                                <option value="Subject2 ">Subject2</option>
-                                <option value="Subject3 ">Subject3</option>
-                                <option value="Subject4 ">Subject4</option>
-                                <option value="Subject5 ">Subject5</option>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="Subject" name="Subject">
+                                <option value="Subject1">Subject1</option>
+                                <option value="Subject2">Subject2</option>
+                                <option value="Subject3">Subject3</option>
+                                <option value="Subject4">Subject4</option>
+                                <option value="Subject5">Subject5</option>
                                 <option value="Subject6 ">Subject6</option>
                             </select>
                         </div>
                     </div>
-                    <div class="row ">
-                        <div class="col-25 ">
-                            <label for="Comment ">Comment</label>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Comment">Comment</label>
                         </div>
-                        <div class="col-75 ">
-                            <textarea id="Comment " name="Comment " placeholder="Write something.. " style="height:200px "></textarea>
+                        <div class="col-75">
+                            <textarea id="Comment" name="Comment" placeholder="Write something.." style="height:200px"></textarea>
                         </div>
                     </div>
-                    <div class="row ">
-                        <input type="submit " value="Send ">
+                    <div class="row">
+                        <input type="submit" value="Send">
                     </div>
                 </form>
             </div>
 
+
+            <!---To separate both sections--->
+            <div class="separator">
+                <h2> </h2>
+            </div>
         </div>
     </div>
 
-    <footer id="footer ">
-
+    <footer id="footer">
+        <div class="footer-info">
+            <h3>pro_TECH_ting_Ur_Genes</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptatum at debitis ut eos!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></a>
+                </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a>></a>
+                </li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a>></a>
+                </li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a>></a>
+                </li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a>></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright&copy; 2021 pro_TECH_ting_Ur_Genes designed by YaiGenes</p>
+        </div>
     </footer>
 </body>
 
